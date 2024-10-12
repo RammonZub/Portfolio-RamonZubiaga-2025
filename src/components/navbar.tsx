@@ -7,9 +7,10 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { DATA } from "@/data/resume";
+import { DATA, getIconComponent } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import React from "react";
 
 export default function Navbar() {
   return (
@@ -50,7 +51,7 @@ export default function Navbar() {
                       "size-12"
                     )}
                   >
-                    <social.icon className="size-4" />
+                    {React.createElement(getIconComponent(social.icon), { className: "size-4" })}
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent>
