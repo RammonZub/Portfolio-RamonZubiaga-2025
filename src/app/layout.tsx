@@ -46,6 +46,10 @@ export const metadata: Metadata = {
     google: "",
     yandex: "",
   },
+  icons: [
+    { rel: 'icon', url: '/favicon.ico' },
+    { rel: 'icon', url: '/favicon.png', type: 'image/png' },
+  ],
 };
 
 export default function RootLayout({
