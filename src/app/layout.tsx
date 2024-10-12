@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+import getConfig from 'next/config';
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -52,6 +53,8 @@ export const metadata: Metadata = {
   ],
 };
 
+const { publicRuntimeConfig } = getConfig();
+
 export default function RootLayout({
   children,
 }: {
@@ -68,7 +71,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme={publicRuntimeConfig?.defaultTheme || 'dark'}
           enableSystem
           disableTransitionOnChange
         >
