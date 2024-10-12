@@ -12,9 +12,9 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10">
+    <main className="flex flex-col min-h-[100dvh] space-y-8">
       <section id="hero" className="text-center">
-        <div className="mx-auto w-full max-w-2xl space-y-6">
+        <div className="mx-auto w-full max-w-2xl space-y-4">
           <BlurFade delay={BLUR_FADE_DELAY}>
             <div className="relative w-28 h-28 mx-auto">
               <img
@@ -24,15 +24,15 @@ export default function Page() {
               />
             </div>
           </BlurFade>
-          <div className="space-y-4">
+          <div className="space-y-3">
             <BlurFadeText
               delay={BLUR_FADE_DELAY * 2}
-              className="text-xl font-serif text-gray-500 italic mx-auto"
+              className="text-2xl text-gray-500 italic mx-auto"
               yOffset={4}
               text={DATA.name}
             />
             <BlurFadeText
-              className="text-3xl md:text-4xl font-semibold"
+              className="text-3xl md:text-4xl font-medium"
               delay={BLUR_FADE_DELAY * 3}
               text={DATA.description}
             />
@@ -46,7 +46,7 @@ export default function Page() {
       </section>
 
       <section id="projects">
-        <div className="space-y-12 w-full py-12">
+        <div className="space-y-12 w-full py-8">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
