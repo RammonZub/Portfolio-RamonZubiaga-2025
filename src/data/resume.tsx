@@ -170,9 +170,9 @@ export const DATA = {
     {
       title: "Momentum - Pursuit of a Superior Self",
       href: "#",
-      dates: "2024",
-      active: false,
-      description: "Designed and developed a full-stack Swift UI iOS app called Momentum. This social media platform concept was centered on entrepreneurs focused on personal development. The app hosted public and private communities where users could share workouts, personal developments, and projects. Features included user authentication, real-time data synchronization, and a custom UI/UX design. The goal was to create a more authentic alternative to mainstream social media platforms, fostering mutual encouragement and collaboration among like-minded individuals.",
+      dates: "2024 - Future",
+      active: true,
+      description: "I've started designing and developing a full-stack Swift UI iOS app called Momentum, with plans to complete it in the future. This social media platform concept is centered on entrepreneurs focused on personal development. The app will host public and private communities where users can share workouts, personal developments, and projects. Planned features include user authentication, real-time data synchronization, and a custom UI/UX design. The goal is to create a more authentic alternative to mainstream social media platforms, fostering mutual encouragement and collaboration among like-minded individuals. This project is in ongoing development and will continue to evolve as work progresses.",
       technologies: [
         "Swift UI",
         "iOS Development",
