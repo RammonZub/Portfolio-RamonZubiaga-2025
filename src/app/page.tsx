@@ -16,12 +16,17 @@ export default function Page() {
       <section id="hero" className="text-center">
         <div className="mx-auto w-full max-w-2xl space-y-4">
           <BlurFade delay={BLUR_FADE_DELAY}>
-            <div className="relative w-28 h-28 mx-auto">
+            <div className="relative w-32 h-32 mx-auto">
               <img
                 src={DATA.avatarUrl}
                 alt={DATA.name}
                 className="w-full h-full object-cover rounded-lg"
               />
+              <div className="absolute -top-6 -right-14 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 rounded-2xl px-4 py-2 text-sm font-medium shadow-md">
+                Locked In
+                <div className="absolute left-0.5 bottom-1 w-4 h-4 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 rounded-full transform translate-y-1/2"></div>
+                <div className="absolute left-0 bottom-0 w-2 h-2 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-800 rounded-full transform translate-y-full"></div>
+              </div>
             </div>
           </BlurFade>
           <div className="space-y-3">
