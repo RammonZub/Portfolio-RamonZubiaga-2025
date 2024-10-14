@@ -11,9 +11,9 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Markdown from "react-markdown";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ImageOverlay } from "./image-overlay";
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 interface Props {
   title: string;
@@ -45,6 +45,17 @@ export function ProjectCard({
   className,
 }: Props) {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust this breakpoint as needed
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const handleMediaClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -63,23 +74,16 @@ export function ProjectCard({
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300, damping: 10 }}
     >
-      {video ? (
-        <>
-          <video
-            src={video}
-            poster={image} // Use the image as a poster (shown while video is loading)
-            autoPlay
-            loop
-            muted
-            playsInline
-            className={`absolute inset-0 h-full w-full object-cover ${imagePosition}`}
-          />
-          <img
-            src={image}
-            alt={title}
-            className={`absolute inset-0 h-full w-full object-cover ${imagePosition} ${video ? 'hidden' : ''}`}
-          />
-        </>
+      {video && !isMobile ? (
+        <video
+          src={video}
+          poster={image}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className={`absolute inset-0 h-full w-full object-cover ${imagePosition}`}
+        />
       ) : image ? (
         <img
           src={image}
@@ -146,7 +150,7 @@ export function ProjectCard({
       <ImageOverlay
         isOpen={isOverlayOpen}
         onClose={() => setIsOverlayOpen(false)}
-        imageSrc={image || video || ""}
+        imageSrc={isMobile && image ? image : (video || image || "")}
         imageAlt={title}
       />
     </>
