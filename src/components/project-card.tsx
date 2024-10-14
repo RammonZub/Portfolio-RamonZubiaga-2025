@@ -64,14 +64,22 @@ export function ProjectCard({
       transition={{ type: "spring", stiffness: 300, damping: 10 }}
     >
       {video ? (
-        <video
-          src={video}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className={`absolute inset-0 h-full w-full object-cover ${imagePosition}`}
-        />
+        <>
+          <video
+            src={video}
+            poster={image} // Use the image as a poster (shown while video is loading)
+            autoPlay
+            loop
+            muted
+            playsInline
+            className={`absolute inset-0 h-full w-full object-cover ${imagePosition}`}
+          />
+          <img
+            src={image}
+            alt={title}
+            className={`absolute inset-0 h-full w-full object-cover ${imagePosition} ${video ? 'hidden' : ''}`}
+          />
+        </>
       ) : image ? (
         <img
           src={image}

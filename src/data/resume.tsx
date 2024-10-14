@@ -212,7 +212,7 @@ export const DATA = {
           icon: "",
         },
       ],
-      image: "/ZtrikoBox.png",
+      image: "/ZtrikoCaja.png",
       video: "/ZtrikoClip.mp4",
       imagePosition: undefined,
     },
