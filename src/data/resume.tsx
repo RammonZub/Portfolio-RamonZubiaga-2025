@@ -8,7 +8,7 @@ export const DATA = {
   url: "https://ramonzubiaga.com",
   location: "Madrid, Spain",
   locationLink: "",
-  description: "Building Tech, Solving Problems, Automating the Future",
+  description: "Building Tech, Solving Problems, Automating Stuff",
   summary: "Interested in software and building companies. Currently pursuing a double degree in Business Administration and Data Analytics while developing software and apps. Always eager to learn and create solutions that make a difference.",
   avatarUrl: "/me.jpg",
   skills: [
