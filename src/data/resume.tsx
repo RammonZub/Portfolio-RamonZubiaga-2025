@@ -156,7 +156,7 @@ export const DATA = {
           icon: "",
         },
       ],
-      image: "projects/BitesAi/BitesAiMockups.png",
+      image: "projects/BitesAi/BitesMockups.png",
       galleryImages: [
         "projects/BitesAi/BitesWebsite.png",
         "projects/BitesAi/BitesLogo.png"
