@@ -76,7 +76,7 @@ export const DATA = {
       logoUrl: "/Ludus.jpeg",
       start: "June 2024",
       end: "July 2024",
-      description: `• Migrated 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲𝘀, 𝗔𝗣𝗜𝘀, 𝗮𝗻𝗱 𝘁𝗲𝗹𝗲𝗺𝗲𝘁𝗿𝘆 𝗳𝗿𝗼𝗺 𝗔𝗪𝗦 𝘁𝗼 𝗔𝘇𝘂𝗿𝗲, supporting a large-scale backend migration.\n• 𝗗𝗲𝘀𝗶𝗴𝗻𝗲𝗱 𝗮𝗻𝗱 𝗰𝗿𝗲𝗮𝘁𝗲𝗱 𝗮 𝗻𝗲𝘄 𝗱𝗮𝘁𝗮 𝗺𝗼𝗱𝗲𝗹 to meet evolving client needs, enhancing system performance and scalability.\n• 𝗗𝗲𝘃𝗲𝗹����𝗽𝗲𝗱 𝗮 𝗳𝗿𝗼𝗻𝘁-𝗲𝗻𝗱 𝗶𝗻 𝗶𝗻𝗴 𝗺𝗼𝗻𝘁𝗵𝗹𝘆 𝗴𝗿𝗮𝗽𝗵𝘀 𝗮𝗻𝗱 𝗱𝗮𝘁𝗮 𝗿𝗲𝗽𝗼𝗿𝘁𝘀, improving client visibility into training performance metrics.\n• 𝗦𝘂𝗽𝗽𝗼𝗿𝘁𝗲𝗱 𝗰𝗿𝗲𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗮 𝗻𝗲𝘄 𝗱𝗮𝘁𝗮 𝗺𝗼𝗱𝗲𝗹 𝗼𝗻 𝗔𝘇𝘂𝗿𝗲 𝗦𝗤𝗟 𝗦𝗲𝗿𝘃𝗲𝗿 𝘂𝘀𝗶𝗻𝗴 𝗘𝗻𝘁𝗶𝘁𝘆 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸 𝗖𝗼𝗿𝗲.\n• 𝗖𝗼𝗹𝗹𝗮𝗯𝗼𝗿𝗮𝘁𝗲𝗱 𝘄𝗶𝘁𝗵 𝗰𝗹𝗶𝗲𝗻𝘁𝘀 𝘁𝗼 𝗱𝗲𝗳𝗶𝗻𝗲 𝘀𝗽𝗲𝗰𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀, ensuring accurate representation of key performance indicators.`,
+      description: `• Migrated 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲𝘀, 𝗔𝗣𝗜𝘀, 𝗮𝗻𝗱 𝘁𝗲𝗹𝗲𝗺𝗲𝘁𝗿𝘆 𝗳𝗿𝗼𝗺 𝗔𝗪𝗦 𝘁𝗼 𝗔𝘇𝘂𝗿𝗲, supporting a large-scale backend migration.\n• 𝗗𝗲𝘀𝗶𝗴𝗻𝗲𝗱 𝗮𝗻𝗱 𝗰𝗿𝗲𝗮𝘁𝗲𝗱 𝗮 𝗻𝗲𝘄 𝗱𝗮𝘁𝗮 𝗺𝗼𝗱𝗲𝗹 to meet evolving client needs, enhancing system performance and scalability.\n• 𝗗𝗲𝘃𝗲𝗹𝗽𝗲𝗱 𝗮 𝗳𝗿𝗼𝗻𝘁-𝗲𝗻𝗱 𝗶𝗻 𝗶𝗻𝗴 𝗺𝗼𝗻𝘁𝗵𝗹𝘆 𝗴𝗿𝗮𝗽𝗵𝘀 𝗮𝗻𝗱 𝗱𝗮𝘁𝗮 𝗿𝗲𝗽𝗼𝗿𝘁𝘀, improving client visibility into training performance metrics.\n• 𝗦𝘂𝗽𝗽𝗼𝗿𝘁𝗲𝗱 𝗰𝗿𝗲𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗮 𝗻𝗲𝘄 𝗱𝗮𝘁𝗮 𝗺𝗼𝗱𝗲𝗹 𝗼𝗻 𝗔𝘇𝘂𝗿𝗲 𝗦𝗤𝗟 𝗦𝗲𝗿𝘃𝗲𝗿 𝘂𝘀𝗶𝗻𝗴 𝗘𝗻𝘁𝗶𝘁𝘆 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸 𝗖𝗼𝗿𝗲.\n• 𝗖𝗼𝗹𝗹𝗮𝗯𝗼𝗿𝗮𝘁𝗲𝗱 𝘄𝗶𝘁𝗵 𝗰𝗹𝗶𝗲𝗻𝘁𝘀 𝘁𝗼 𝗱𝗲𝗳𝗶𝗻𝗲 𝘀𝗽𝗲𝗰𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀, ensuring accurate representation of key performance indicators.`,
       preview: "Led AWS to Azure migration and developed performance tracking interfaces",
     },
     {
@@ -124,7 +124,7 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Bites AI",
+      title: "BitesAi",
       href: "https://bitesai.vercel.app/",
       dates: "2024",
       active: true,
@@ -160,7 +160,6 @@ export const DATA = {
       galleryImages: [
         "projects/BitesAi/BitesWebsite.png",
         "projects/BitesAi/BitesLogo.png"
-
       ],
       imagePosition: "object-center",
       video: undefined,
