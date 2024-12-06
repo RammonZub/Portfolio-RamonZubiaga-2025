@@ -312,6 +312,9 @@ export default function Page() {
             </div>
           </section>
         </div>
+
+        {/* Add bottom spacing */}
+        <div className="h-24"></div>
       </div>
     </main>
   );
