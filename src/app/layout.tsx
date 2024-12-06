@@ -4,20 +4,22 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter, Instrument_Serif } from 'next/font/google';
+import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import getConfig from 'next/config';
 import { Analytics } from "@vercel/analytics/react";
+import { Instrument_Serif } from "next/font/google";
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
 });
 
 const instrumentSerif = Instrument_Serif({
-  weight: '400',
+  weight: ['400'],
+  style: ['normal', 'italic'],
   subsets: ['latin'],
-  display: 'swap',
+  variable: '--font-instrument-serif',
 });
 
 export const metadata: Metadata = {
@@ -68,22 +70,27 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.className}`}>
-      <body>
-        <div className={instrumentSerif.className}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme={publicRuntimeConfig?.defaultTheme || 'dark'}
-            enableSystem
-            disableTransitionOnChange
-          >
-            <TooltipProvider delayDuration={0}>
-              {children}
-              <Navbar />
-            </TooltipProvider>
-          </ThemeProvider>
-          <Analytics />
-        </div>
+    <html lang="en" suppressHydrationWarning>
+      <head />
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable,
+          instrumentSerif.variable
+        )}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme={publicRuntimeConfig?.defaultTheme || 'dark'}
+          enableSystem
+          disableTransitionOnChange
+        >
+          <TooltipProvider delayDuration={0}>
+            {children}
+            <Navbar />
+          </TooltipProvider>
+        </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

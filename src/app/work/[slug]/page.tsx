@@ -40,7 +40,7 @@ export default function WorkPage({ params }: { params: { slug: string } }) {
       </div>
 
       {/* Title & Brief Description */}
-      <div className="text-center mb-12 max-w-3xl mx-auto">
+      <div className="text-center mb-8 max-w-3xl mx-auto">
         <h1 className="font-instrument-serif text-4xl md:text-6xl mb-6 text-black/90 dark:text-white/90">
           {project.title}
         </h1>
@@ -50,20 +50,17 @@ export default function WorkPage({ params }: { params: { slug: string } }) {
       </div>
 
       {/* Info Rectangle */}
-      <div className="grid grid-cols-3 mb-12 max-w-3xl mx-auto">
-        <div className="flex justify-center">
-          <InfoCard title="TIMELINE" value={project.dates} />
-        </div>
-        <div className="flex justify-center">
-          <InfoCard title="SERVICES" value={project.service || "Web Design"} />
-        </div>
-        <div className="flex justify-center">
-          <InfoCard 
-            title="WEBSITE" 
-            value={project.href !== "#" ? new URL(project.href).hostname : "Coming Soon"}
-            href={project.href}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mb-8">
+        <InfoCard title="Service" value={project.service || "N/A"} />
+        <InfoCard title="Timeline" value={project.dates} />
+        {project.links?.map((link) => (
+          <InfoCard
+            key={link.href}
+            title={link.title}
+            value="View Project"
+            href={link.href}
           />
-        </div>
+        ))}
       </div>
 
       {/* Main Image/Video */}
@@ -92,13 +89,13 @@ export default function WorkPage({ params }: { params: { slug: string } }) {
       {/* Project Details Section */}
       <div className="max-w-3xl mx-auto w-full mb-24">
         <div className="flex items-center gap-4 mb-8">
-          <h2 className="text-3xl font-instrument-serif">Overview</h2>
+          <h2 className="font-instrument-serif text-2xl mb-4">Overview</h2>
           <div className="h-[1px] flex-grow bg-gradient-to-r from-black/40 to-black/5 dark:from-white/40 dark:to-white/5"></div>
         </div>
         
         <div className="space-y-12">
           {/* Project Details */}
-          <div className="prose dark:prose-invert max-w-none">
+          <div className="prose dark:prose-invert max-w-none mb-8 font-sans">
             <p className="text-black/70 dark:text-white/70 leading-relaxed whitespace-pre-line">
               {project.overview}
             </p>
@@ -106,17 +103,12 @@ export default function WorkPage({ params }: { params: { slug: string } }) {
 
           {/* Tech Stack */}
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-black/90 dark:text-white/90">
-              Technologies Used
-            </h3>
-            <div className="flex flex-wrap gap-2 mb-12">
+            <h2 className="font-instrument-serif text-2xl mb-4">Technologies Used</h2>
+            <div className="flex flex-wrap gap-2 mb-8">
               {project.technologies.map((tech) => (
-                <span 
-                  key={tech}
-                  className="px-3 py-1 rounded-full bg-black/5 dark:bg-white/5 text-sm"
-                >
+                <Badge key={tech} className="font-sans">
                   {tech}
-                </span>
+                </Badge>
               ))}
             </div>
           </div>
@@ -124,9 +116,7 @@ export default function WorkPage({ params }: { params: { slug: string } }) {
           {/* Project Gallery */}
           {hasGalleryImages(project) && project.galleryImages.length > 0 && (
             <div className="space-y-8 mt-12">
-              <h3 className="text-xl font-semibold mb-6 text-black/90 dark:text-white/90">
-                Project Gallery
-              </h3>
+              <h2 className="font-instrument-serif text-2xl mb-4">Project Gallery</h2>
               <div className="space-y-6 max-w-2xl mx-auto">
                 {project.galleryImages.map((image, index) => (
                   <div 
@@ -158,9 +148,9 @@ export default function WorkPage({ params }: { params: { slug: string } }) {
 // Info Card Component
 function InfoCard({ title, value, href }: { title: string; value: string; href?: string }) {
   const content = (
-    <div className="border border-black/10 dark:border-white/10 rounded-lg p-6 hover:border-black/20 dark:hover:border-white/20 transition-colors">
-      <h3 className="text-sm text-black/50 dark:text-white/50 mb-2">{title}</h3>
-      <p className="font-instrument-serif text-lg text-black/80 dark:text-white/80">
+    <div className="border border-black/10 dark:border-white/10 rounded-lg p-4 sm:p-6 hover:border-black/20 dark:hover:border-white/20 transition-colors">
+      <h3 className="text-xs sm:text-sm text-black/50 dark:text-white/50 mb-1 sm:mb-2">{title}</h3>
+      <p className="font-instrument-serif text-base sm:text-lg text-black/80 dark:text-white/80">
         {value}
       </p>
     </div>
