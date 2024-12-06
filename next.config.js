@@ -4,6 +4,12 @@ const nextConfig = {
   images: {
     domains: ['your-domain.com'], // Add your image domain here
     formats: ['image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
 }
 

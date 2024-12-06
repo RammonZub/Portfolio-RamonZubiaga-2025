@@ -8,10 +8,18 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import getConfig from 'next/config';
 import { Analytics } from "@vercel/analytics/react";
+import { Instrument_Serif } from "next/font/google";
 
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
+});
+
+const instrumentSerif = Instrument_Serif({
+  weight: ['400'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  variable: '--font-instrument-serif',
 });
 
 export const metadata: Metadata = {
@@ -66,8 +74,9 @@ export default function RootLayout({
       <head />
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
-          fontSans.variable
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable,
+          instrumentSerif.variable
         )}
       >
         <ThemeProvider
