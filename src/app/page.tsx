@@ -105,9 +105,9 @@ export default function Page() {
                   </div>
 
                   {/* Mobile Tags */}
-                  <div className="md:hidden relative mt-4 mb-12">
+                  <div className="md:hidden relative mt-4 mb-24">
                     {/* Left side tags */}
-                    <div className="absolute -left-4 -top-16 z-10">
+                    <div className="absolute -left-4 top-0 z-10">
                       <div className="space-y-4">
                         <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm transform rotate-6 hover:rotate-0 transition-all duration-300">
                           Mobile Development
@@ -122,7 +122,7 @@ export default function Page() {
                     </div>
 
                     {/* Right side tags */}
-                    <div className="absolute -right-4 -top-16 z-10">
+                    <div className="absolute -right-4 top-0 z-10">
                       <div className="space-y-4">
                         <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm transform -rotate-6 hover:rotate-0 transition-all duration-300">
                           Dashboards

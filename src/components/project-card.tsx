@@ -57,6 +57,24 @@ export function ProjectCard({
 
   const MediaContent = () => {
     if (video && title === "Ztriko") {
+      if (isMobile) {
+        return (
+          <div className="relative aspect-video">
+            <Image
+              src="/projects/Ztriko/ZtrikoProductView.png"
+              alt={title}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className={cn(
+                "object-cover rounded-lg transition-transform duration-300 group-hover:scale-[1.02]",
+                imagePosition
+              )}
+              placeholder="blur"
+              blurDataURL={`data:image/jpeg;base64,${generateBlurPlaceholder()}`}
+            />
+          </div>
+        );
+      }
       return (
         <div className="relative aspect-video">
           <video
