@@ -124,7 +124,107 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "BitesAi",
+      title: "CarsAI",
+      href: "#",
+      dates: "2025",
+      active: false,
+      description: "Developed an iOS app using Swift and AI models to create hyperrealistic car images in unique scenarios, replacing professional car photography.",
+      overview: `• Built an iOS application using Swift and SwiftUI for car enthusiasts to create hyperrealistic images of their vehicles
+• Implemented AI model training using Replicate API, allowing users to upload 10-20 images of their car to train custom models
+• Integrated Stable Diffusion models for generating high-quality, realistic car images in unique scenarios
+• Developed features for creating:
+  - Hyperrealistic car images in impossible locations
+  - Unique artistic interpretations of vehicles
+  - Custom scenarios tailored to user preferences
+• Integrated Firebase for:
+  - User authentication
+  - Image storage and management
+  - Model training data synchronization
+• Gained expertise in:
+  - AI model training and deployment
+  - Stable Diffusion architecture
+  - Replicate API integration
+  - SwiftUI app development
+  - Firebase backend integration
+• The project provided valuable experience in:
+  - Combining AI models with mobile applications
+  - Managing complex image processing workflows
+  - Implementing custom AI training pipelines
+  - Building intuitive interfaces for AI-powered features`,
+      service: "Mobile Application",
+      technologies: [
+        "Swift",
+        "SwiftUI",
+        "Replicate API",
+        "Stable Diffusion",
+        "Firebase",
+        "AI Model Training",
+        "Image Processing",
+        "Machine Learning"
+      ],
+      links: [],
+      image: "carsai_screens.png",
+      galleryImages: [],
+      mainPageImage: "carsai_screens.png",
+      video: undefined,
+      imagePosition: undefined,
+      category: "Mobile App",
+      displayTags: ["iOS", "AI", "Machine Learning"],
+      searchTags: ["Mobile", "iOS", "AI", "Swift", "Stable Diffusion", "Replicate", "Firebase"]
+    },
+    {
+      title: "Peak Price",
+      href: "#",
+      dates: "2024 - 2025",
+      active: false,
+      description: "Developed a comprehensive dynamic pricing platform, initially integrated with LemonSqueezy and later transitioned to Shopify, mastering both ecosystems.",
+      overview: `• Developed the full-stack application and dynamic pricing engine, implementing advanced pricing strategies including demand-based pricing, A/B testing, and geo-based pricing
+• Created the initial integration with LemonSqueezy SDK, building a complete pricing management system with experimental quarterly payment models
+• After market validation revealed LemonSqueezy's limited market size, pivoted to develop a Shopify app version, mastering their extensive SDK and API ecosystem
+• Implemented complex Shopify features including Liquid templates, GraphQL APIs, and custom app development
+• Despite Shopify's pricing restrictions limiting the app's viability, gained deep expertise in:
+  - Shopify app architecture and development lifecycle
+  - Liquid templating language for custom storefronts
+  - GraphQL API integration for data management
+  - Shopify Admin API for backend operations
+  - Shopify Polaris design system for UI/UX
+• Developed skills in:
+  - Building and deploying Shopify apps
+  - Implementing custom pricing strategies
+  - Integrating with e-commerce platforms
+  - Managing app lifecycle and updates
+• The project provided valuable experience in:
+  - Market validation and product pivoting
+  - Complex SDK integration
+  - E-commerce platform development
+  - Pricing strategy implementation`,
+      service: "SaaS Development",
+      technologies: [
+        "LemonSqueezy SDK",
+        "Shopify SDK",
+        "GraphQL",
+        "Liquid",
+        "Node.js",
+        "React",
+        "Pricing Algorithms",
+        "A/B Testing",
+        "Shopify Polaris",
+        "Shopify Admin API",
+        "Shopify GraphQL API"
+      ],
+      links: [],
+      image: "main_peakprice.jpg",
+      galleryImages: [
+        "peakprice_landing.png"
+      ],
+      mainPageImage: "main_peakprice.jpg",
+      video: undefined,
+      imagePosition: undefined,
+      category: "SaaS",
+      displayTags: ["SaaS", "Shopify", "LemonSqueezy"],
+      searchTags: ["SaaS", "Pricing", "Shopify", "LemonSqueezy", "E-commerce", "SDK Integration", "GraphQL", "Liquid"]
+    },{
+      title: "BitesAI (Cal Ai Inspired)",
       href: "https://bitesai.vercel.app/",
       dates: "2024",
       active: true,

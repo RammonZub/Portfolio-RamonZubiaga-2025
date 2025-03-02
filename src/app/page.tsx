@@ -60,84 +60,21 @@ export default function Page() {
 
 
       <BlurFade delay={BLUR_FADE_DELAY * 3}>
-                <section className="relative py-2 my-2">
-                  <div className="max-w-2xl mx-auto text-center px-4 md:px-12 mb-8">
-                    <h2 className="font-instrument-serif text-[26px] md:text-[32px] leading-[1.3] tracking-[-0.02em] text-center mx-auto">
-                      I build{" "}
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-white/90 to-gray-400/90">
-                        websites, automations, and complex web and mobile applications
-                      </span>{" "}
-                      that deliver{" "}
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-white/90 to-gray-400/80">
-                        impactful user experiences and drive results
-                      </span>
-                    </h2>
-                  </div>
-                  
-                  {/* Floating Tags */}
-                  <div className="hidden md:block absolute -left-16 lg:-left-24 top-1">
-                    <div className="space-y-8">
-                      <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm transform rotate-10 transition-all duration-300 hover:rotate-0 hover:scale-105 hover:bg-white/10 hover:shadow-xl">
-                        Mobile Development
-                      </div>
-                      <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/10 hover:shadow-xl">
-                        Web Development
-                      </div>
-                      <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm transform -rotate-10 transition-all duration-300 hover:rotate-0 hover:scale-105 hover:bg-white/10 hover:shadow-xl">
-                        Automations
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Right side tags */}
-                  <div className="hidden md:block absolute -right-16 lg:-right-24 top-1">
-                    <div className="space-y-8 pl-8">
-                      <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm transform -rotate-10 transition-all duration-300 hover:rotate-0 hover:scale-105 hover:bg-white/10 hover:shadow-xl">
-                        Dashboards
-                      </div>
-                      <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/10 hover:shadow-xl">
-                        MVP Building
-                      </div>
-                      <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm transform rotate-10 transition-all duration-300 hover:rotate-0 hover:scale-105 hover:bg-white/10 hover:shadow-xl">
-                        SaaS Development
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Mobile Tags */}
-                  <div className="md:hidden relative mt-4 mb-24">
-                    {/* Left side tags */}
-                    <div className="absolute -left-4 top-0 z-10">
-                      <div className="space-y-4">
-                        <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm transform rotate-6 hover:rotate-0 transition-all duration-300">
-                          Mobile Development
-                        </div>
-                        <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm hover:scale-105 transition-all duration-300">
-                          Web Development
-                        </div>
-                        <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm transform -rotate-3 hover:rotate-0 transition-all duration-300">
-                          Automations
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Right side tags */}
-                    <div className="absolute -right-4 top-0 z-10">
-                      <div className="space-y-4">
-                        <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm transform -rotate-6 hover:rotate-0 transition-all duration-300">
-                          Dashboards
-                        </div>
-                        <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm hover:scale-105 transition-all duration-300">
-                          MVP Building
-                        </div>
-                        <div className="bg-white/5 rounded-full px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm transform rotate-3 hover:rotate-0 transition-all duration-300">
-                          SaaS Development
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </BlurFade>
+        <section className="relative py-2 my-2">
+          <div className="max-w-2xl mx-auto text-center px-4 md:px-12 mb-8">
+            <h2 className="font-instrument-serif text-[26px] md:text-[32px] leading-[1.3] tracking-[-0.02em] text-center mx-auto">
+              I build{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white/90 to-gray-400/90">
+                websites, automations, and complex web and mobile applications
+              </span>{" "}
+              that deliver{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white/90 to-gray-400/80">
+                impactful user experiences and drive results
+              </span>
+            </h2>
+          </div>
+        </section>
+      </BlurFade>
             </div>
           </div>
         </section>
